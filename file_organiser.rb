@@ -1,6 +1,6 @@
 file_formats = {
     pdf: ['pdf'],
-    video: ['mp4', 'mkv', 'avi'],
+    videos: ['mp4', 'mkv', 'avi'],
     images: ['jpg', 'jpeg', 'png'],
     audio: ['mp3', 'wav', 'flac'],
     documents: ['docx', 'doc', 'txt']
