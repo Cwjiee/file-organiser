@@ -5,8 +5,8 @@ file_formats = {
     audio: ['mp3', 'wav', 'flac'],
     documents: ['docx', 'doc', 'txt', 'pptx'],
     zip: ['zip', 'rar'],
-    executable: ['exe', 'msi'],
-    sheet: ['csv', 'xlsx', 'xls']
+    executable: ['exe', 'msi', 'aia'],
+    sheet: ['csv', 'xlsx', 'xls'],
 }
 
 Dir.chdir('C:/Users/User/Downloads') 
