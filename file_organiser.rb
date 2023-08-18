@@ -3,7 +3,8 @@ file_formats = {
     videos: ['mp4', 'mkv', 'avi'],
     images: ['jpg', 'jpeg', 'png'],
     audio: ['mp3', 'wav', 'flac'],
-    documents: ['docx', 'doc', 'txt']
+    documents: ['docx', 'doc', 'txt'],
+    zip: ['zip', 'rar']
 }
 
 Dir.chdir('C:/Users/User/Downloads') 
