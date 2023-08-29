@@ -7,17 +7,27 @@ file_formats = {
     zip: ['zip', 'rar'],
     executable: ['exe', 'msi', 'aia'],
     sheet: ['csv', 'xlsx', 'xls'],
+    programming: ['cpp', 'c', 'js', 'rb']
 }
 
 Dir.chdir('C:/Users/User/Downloads') 
 
-### To organise files into folders ###
+### To organise files/folders into folders ###
 
 Dir.each_child('.') do |file|
     file_formats.each do |key, value|
         if value.include?(File.extname(file).delete('.'))
             Dir.mkdir(key.to_s) unless Dir.exist?(key.to_s)
             File.rename(file, "#{key.to_s}/#{file}")
+        end
+    end
+
+    if File.directory?(file)
+        if File.basename(file) != 'Directories'
+            if !file_formats.include?(file.to_sym)
+                Dir.mkdir('Directories') unless Dir.exist?('Directories')
+                File.rename(file, "Directories/#{file}")
+            end
         end
     end
 end
